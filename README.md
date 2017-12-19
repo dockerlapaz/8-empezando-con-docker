@@ -1,5 +1,3 @@
-> Esta versión está marcada como inestable. Se ha mantenido la versión como ejemplo de Dockerfile
-
 # Docker Nights 8: ¿Cómo empiezo con Docker?
 
 Esta es una aplicación escrita en PHP y que guarda datos en MongoDB.
@@ -20,11 +18,12 @@ Esta es una aplicación escrita en PHP y que guarda datos en MongoDB.
 docker build -t preguntas .
 ```
 
-## Corre la imagen
+## Creando un contendor e imagenes
 
 ```sh
-docker run -d --name preguntas -p 80:80 preguntas:latest
-docker logs -f preguntas
-docker rm -f preguntas
+docker network create preguntas
+docker run -d --name mongo --network preguntas mongo:3.6
+docker run -d --network -e DB_ADDRESS=mongodb://mongo:27017 --name preguntas -p 80:80 preguntas
+
 ```
 

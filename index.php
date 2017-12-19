@@ -7,8 +7,8 @@ require_once __DIR__ . "/config.php";
 Flight::set('flight.log_errors', true);
 
 // Initialize MongoDB
-$mongo = new MongoDB\Driver\Manager($db_address);
-$collection = (new MongoDB\Client)->questions->questions;
+$mongo = new MongoDB\Client($db_address);
+$collection = $mongo->questions->questions;
 
 // Main Application Logic
 Flight::route('GET /', function() {
