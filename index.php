@@ -2,11 +2,12 @@
 
 // That's how it starts
 require_once __DIR__ . "/vendor/autoload.php";
+require_once __DIR__ . "/config.php";
 
 Flight::set('flight.log_errors', true);
 
 // Initialize MongoDB
-$mongo = new MongoDB\Driver\Manager();
+$mongo = new MongoDB\Driver\Manager($db_address);
 $collection = (new MongoDB\Client)->questions->questions;
 
 // Main Application Logic
