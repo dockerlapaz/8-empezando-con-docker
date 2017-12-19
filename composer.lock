@@ -1,0 +1,168 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "0892897279821466c3928d087b719d1d",
+    "packages": [
+        {
+            "name": "jimmiw/php-time-ago",
+            "version": "2.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jimmiw/php-time-ago.git",
+                "reference": "8180edac01008728c65b089b3dcc165725d590bb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jimmiw/php-time-ago/zipball/8180edac01008728c65b089b3dcc165725d590bb",
+                "reference": "8180edac01008728c65b089b3dcc165725d590bb",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "phpunit/dbunit": "2.0.*",
+                "phpunit/phpunit": "5.*@stable"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Westsworld": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jimmi Westerberg",
+                    "homepage": "http://www.westsworld.dk",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Simple module, that displays the date in a \"time ago\" format",
+            "homepage": "https://github.com/jimmiw/php-time-ago",
+            "keywords": [
+                "distance of time",
+                "time ago",
+                "time ago in words"
+            ],
+            "time": "2017-03-20T06:13:03+00:00"
+        },
+        {
+            "name": "mikecao/flight",
+            "version": "v1.3.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mikecao/flight.git",
+                "reference": "e146b8c0ddbc6384c5a66f23dea71743fc282289"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mikecao/flight/zipball/e146b8c0ddbc6384c5a66f23dea71743fc282289",
+                "reference": "e146b8c0ddbc6384c5a66f23dea71743fc282289",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.6"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "flight/autoload.php",
+                    "flight/Flight.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mike Cao",
+                    "email": "mike@mikecao.com",
+                    "homepage": "http://www.mikecao.com/",
+                    "role": "Original Developer"
+                }
+            ],
+            "description": "Flight is a fast, simple, extensible framework for PHP. Flight enables you to quickly and easily build RESTful web applications.",
+            "homepage": "http://flightphp.com",
+            "time": "2017-10-20T01:46:56+00:00"
+        },
+        {
+            "name": "mongodb/mongodb",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mongodb/mongo-php-library.git",
+                "reference": "5cffeb33b893b6bb04195b99ddc3955a29252339"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mongodb/mongo-php-library/zipball/5cffeb33b893b6bb04195b99ddc3955a29252339",
+                "reference": "5cffeb33b893b6bb04195b99ddc3955a29252339",
+                "shasum": ""
+            },
+            "require": {
+                "ext-hash": "*",
+                "ext-json": "*",
+                "ext-mongodb": "^1.3.0",
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MongoDB\\": "src/"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Jeremy Mikola",
+                    "email": "jmikola@gmail.com"
+                },
+                {
+                    "name": "Hannes Magnusson",
+                    "email": "bjori@mongodb.com"
+                },
+                {
+                    "name": "Derick Rethans",
+                    "email": "github@derickrethans.nl"
+                }
+            ],
+            "description": "MongoDB driver library",
+            "homepage": "https://jira.mongodb.org/browse/PHPLIB",
+            "keywords": [
+                "database",
+                "driver",
+                "mongodb",
+                "persistence"
+            ],
+            "time": "2017-10-27T19:42:57+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
