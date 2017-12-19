@@ -80,7 +80,7 @@ Habilita e inicia el servicio de MongoDB en el sistema operativo:
 
 ```sh
 systemctl enable mongod
-
+systemctl restart mongod
 ```
 
 ## Composer
