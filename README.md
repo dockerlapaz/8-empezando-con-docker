@@ -96,9 +96,12 @@ php -r "unlink('composer-setup.php');"
 ## Instalando la aplicación
 
 ```sh
-rm -rf /var/www/html/*
+cd /var/www/html/
+rm -rf *
+git clone git@github.com:dockerlapaz/8-empezando-con-docker.git .
+git checkout v1
 composer install
 systemctl restart apache2
 ```
 
-Visita `http://DIRECCION_IP/` para abrir la aplicación.
+Visita `http://PUBLIC_IP/` para abrir la aplicación.
